@@ -1,0 +1,19 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+myvenv/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and outputs
+*.log
+outputs/
+models/
+
+# OS / IDE files
+.DS_Store
+.vscode/
+.idea/
