@@ -10,8 +10,6 @@ myvenv/
 
 # Logs and outputs
 *.log
-outputs/
-models/
 
 # OS / IDE files
 .DS_Store
