@@ -10,7 +10,8 @@ def prepare_tfidf_features(df, text_column, label_column, max_features=5000, tes
     and saves the vectorizer for production use.
     """
     X = df[text_column]
-    y = df[label_column]
+    y = df[label_column].map({'positive': 1, 'negative': 0})
+  
 
     # Stratified train-test split
     X_train, X_test, y_train, y_test = train_test_split(

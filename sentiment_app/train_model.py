@@ -9,13 +9,18 @@ from sklearn.svm import LinearSVC
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 import joblib
 
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+
+
 # 1. Load data
 df = pd.read_csv("data/IMDB Dataset.csv")
 df['review'] = df['review'].astype(str)
-
+df['sentiment_encoded'] = le.fit_transform(df['sentiment'])
 # 2. Preprocess review column
 print("🧹 Preprocessing reviews...")
 df['cleaned_review'] = df['review'].apply(preprocess_text)
+
 
 # 3. TF-IDF vectorization
 X_train_tfidf, X_test_tfidf, y_train, y_test = prepare_tfidf_features(
