@@ -36,10 +36,10 @@ This project analyzes sentiment (positive or negative) from IMDB movie reviews u
 - Scikit-learn
 - NLTK
 - Joblib
-- (Optional) Streamlit for web version
 
 ---
 
 
 ## Output
 
+![Sample Output](./Screenshot 2025-07-30 at 9.34.52 PM.png)
