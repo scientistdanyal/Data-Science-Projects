@@ -42,4 +42,5 @@ This project analyzes sentiment (positive or negative) from IMDB movie reviews u
 
 ## Output
 
-![Sample Output](./Screenshot 2025-07-30 at 9.34.52 PM.png)
+![Sample Output](./Screenshot%202025-07-30%20at%209.34.52%E2%80%AFPM.png)
+
